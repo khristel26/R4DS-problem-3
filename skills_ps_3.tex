@@ -1,0 +1,1696 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={30535 Skills Problem Set 3},
+  pdfauthor={Khristel Zavaleta},
+  colorlinks=true,
+  linkcolor=Maroon,
+  filecolor=Maroon,
+  citecolor=Blue,
+  urlcolor=blue,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\title{30535 Skills Problem Set 3}
+\author{Khristel Zavaleta}
+\date{4/4/2022}
+
+\begin{document}
+\maketitle
+
+\hypertarget{notes-on-submission-15-points}{%
+\section{Notes on submission (15
+points)}\label{notes-on-submission-15-points}}
+
+\hypertarget{front-matter}{%
+\subsection{Front matter}\label{front-matter}}
+
+Due: Saturday, April 23, 2020 at 9:00am Central
+
+Submit to \url{https://classroom.github.com/a/yOcbNjw-}
+
+The problem set is worth 100 points total.
+
+This submission is my work alone and complies with the 30535 integrity
+policy.
+
+Add your initials to indicate your agreement: \textbf{KEZG}
+
+Add names of anyone you discussed this problem set with: **\_\_**
+
+Late coins used this pset: 0. Late coins left after submission: X.
+
+We use (*) to indicate a problem that we think might be time consuming.
+
+Notes on submission (15 points):
+
+\begin{itemize}
+\item
+  Name your submission files skills\_ps\_3.Rmd and skills\_ps\_3.pdf.
+\item
+  Your code should adhere to the style guide. (styler is your friend.)
+\item
+  Knit your RmD to PDF and submit via Gradescope.
+\item
+  Assign the correct page number to the question number on gradescope to
+  help the grading process.
+\item
+  The PDF should not be more than 25 pages, use head() and re-size
+  figures when appropriate.
+\end{itemize}
+
+\pagebreak
+
+\hypertarget{exploratory-data-analysis-25-points}{%
+\section{Exploratory Data Analysis (25
+points)}\label{exploratory-data-analysis-25-points}}
+
+\hypertarget{eda-exploring-variation}{%
+\subsection{EDA: Exploring variation}\label{eda-exploring-variation}}
+
+\textbf{1. Using the diamonds dataset, explore the distribution of
+price.}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(diamonds) }\SpecialCharTok{+} 
+  \FunctionTok{geom\_bar}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ price)) }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"Price of diamonds"}\NormalTok{, }\AttributeTok{y =} \StringTok{"Count"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{xlim}\NormalTok{(}\DecValTok{0}\NormalTok{, }\DecValTok{20000}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{ggtitle}\NormalTok{(}\StringTok{"Distribution of Price"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}\AttributeTok{plot.title =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{hjust =} \FloatTok{0.5}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{skills_ps_3_files/figure-latex/unnamed-chunk-1-1.pdf}
+
+\textbf{a. Describe the overall pattern. Does it fit your expectations?}
+
+From the previus chart, we can see that there are many spikes in prices.
+The distribution is right skewed, that is, there is a greater number of
+diamond prices with a value less than 5,000. The distribution is not
+what I expected, since I expected that the price of diamonds would be
+clustered in the highest values of the histogram.
+
+Likewise, we can see from the following graph that the prices are
+conglomerated in values less than \$1400.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(diamonds) }\SpecialCharTok{+} 
+  \FunctionTok{geom\_freqpoly}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ price), }\AttributeTok{binwidth =} \DecValTok{20}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"Price of diamonds"}\NormalTok{, }\AttributeTok{y =} \StringTok{"Count"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{xlim}\NormalTok{(}\DecValTok{500}\NormalTok{, }\DecValTok{10000}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{ggtitle}\NormalTok{(}\StringTok{"Distribution of Price"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}\AttributeTok{plot.title =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{hjust =} \FloatTok{0.5}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{skills_ps_3_files/figure-latex/unnamed-chunk-2-1.pdf}
+
+\textbf{b. Do you discover anything unusual or surprising? (Hint:
+Carefully think about the binwidth and make sure you try a wide range of
+values.)}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(}\FunctionTok{filter}\NormalTok{(diamonds, price }\SpecialCharTok{\textless{}} \DecValTok{2000} \SpecialCharTok{\&}\NormalTok{ price }\SpecialCharTok{\textgreater{}} \DecValTok{1400}\NormalTok{)) }\SpecialCharTok{+} 
+  \FunctionTok{geom\_histogram}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ price), }\AttributeTok{binwidth =} \DecValTok{5}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"Price of diamonds"}\NormalTok{, }\AttributeTok{y =} \StringTok{"Count"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{ggtitle}\NormalTok{(}\StringTok{"Distribution of Price"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}\AttributeTok{plot.title =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{hjust =} \FloatTok{0.5}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{skills_ps_3_files/figure-latex/unnamed-chunk-3-1.pdf}
+
+The unusual fact of this data set is that there are no values between
+1454 and 1546. After the price cluster reaches zero, the next highest
+cluster is in the range of 1,550 to 2,500.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(diamonds) }\SpecialCharTok{+} 
+  \FunctionTok{geom\_freqpoly}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ price), }\AttributeTok{binwidth =} \DecValTok{15}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"Price of diamonds"}\NormalTok{, }\AttributeTok{y =} \StringTok{"Count"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{xlim}\NormalTok{(}\DecValTok{1550}\NormalTok{, }\DecValTok{10000}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{ggtitle}\NormalTok{(}\StringTok{"Distribution of Price"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}\AttributeTok{plot.title =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{hjust =} \FloatTok{0.5}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{skills_ps_3_files/figure-latex/unnamed-chunk-4-1.pdf}
+
+\textbf{2. Explore the distribution of carat.}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(diamonds) }\SpecialCharTok{+} 
+  \FunctionTok{geom\_bar}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ carat)) }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"Carat"}\NormalTok{, }\AttributeTok{y =} \StringTok{"Count"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{ggtitle}\NormalTok{(}\StringTok{"Distribution of Carat"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}\AttributeTok{plot.title =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{hjust =} \FloatTok{0.5}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{skills_ps_3_files/figure-latex/unnamed-chunk-5-1.pdf}
+
+\textbf{a. Describe the overall pattern. Does it fit your expectation
+given what you saw in prices?}
+
+I would expect the carat distribution to have the same pattern as the
+price distribution. However, this is not quite so. Given that there are
+more diamonds sold at a lower price (right skewed), one would expect
+there to be a larger demand or supply at the lower carat, but this is
+true as we see that the graph has different peaks along the board. We
+are facing a multimodal distribution, since it presents several peaks
+followed by a significant decrease in the data.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(diamonds) }\SpecialCharTok{+} 
+  \FunctionTok{geom\_freqpoly}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ carat), }\AttributeTok{binwidth =} \FloatTok{0.02}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"Carat"}\NormalTok{, }\AttributeTok{y =} \StringTok{"Count"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{ggtitle}\NormalTok{(}\StringTok{"Distribution of Carat (zooming in)"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}\AttributeTok{plot.title =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{hjust =} \FloatTok{0.5}\NormalTok{)) }\SpecialCharTok{+}
+  \FunctionTok{xlim}\NormalTok{(}\FloatTok{0.2}\NormalTok{,}\FloatTok{2.25}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{skills_ps_3_files/figure-latex/unnamed-chunk-6-1.pdf}
+
+Also, in addition to seeing prominent peaks on the chart, outliers can
+be seen.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(diamonds) }\SpecialCharTok{+} 
+  \FunctionTok{geom\_bar}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ carat)) }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"Carat"}\NormalTok{, }\AttributeTok{y =} \StringTok{"Count"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{ggtitle}\NormalTok{(}\StringTok{"Outliers of Carat"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}\AttributeTok{plot.title =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{hjust =} \FloatTok{0.5}\NormalTok{)) }\SpecialCharTok{+}
+  \FunctionTok{xlim}\NormalTok{(}\FloatTok{3.25}\NormalTok{,}\FloatTok{5.1}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{skills_ps_3_files/figure-latex/unnamed-chunk-7-1.pdf}
+
+\textbf{b. How many diamonds are 0.99 carat? How many are 1 carat? What
+do you think is the cause of the difference (feel free to make a plot to
+support your argument)?}
+
+\begin{itemize}
+\tightlist
+\item
+  Number of Diamonds of 0.99 carat and 1 carat:
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{diamonds }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{filter}\NormalTok{(carat }\SpecialCharTok{==} \FloatTok{0.99} \SpecialCharTok{|}\NormalTok{ carat }\SpecialCharTok{==} \DecValTok{1}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{count}\NormalTok{(carat)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 2 x 2
+##   carat     n
+##   <dbl> <int>
+## 1  0.99    23
+## 2  1     1558
+\end{verbatim}
+
+There are 23 diamonds of 0.99 carats and 1558 diamonds of 1.00 carats.
+
+\begin{itemize}
+\tightlist
+\item
+  Plots:
+\end{itemize}
+
+From the following graphs we can see that manufacturing or selling 1.00
+carat diamonds brings much more economic benefits in any cut compared to
+selling 0.99 carat. Therefore, there are more 1 carat diamonds
+manufactured than 0.99 carat diamonds.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{diamonds\_filter }\OtherTok{\textless{}{-}}\NormalTok{ diamonds }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{filter}\NormalTok{(carat }\SpecialCharTok{==} \FloatTok{0.99} \SpecialCharTok{|}\NormalTok{ carat }\SpecialCharTok{==} \DecValTok{1}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(diamonds\_filter) }\SpecialCharTok{+} 
+  \FunctionTok{geom\_histogram}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ price)) }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"Price"}\NormalTok{, }\AttributeTok{y =} \StringTok{"Count"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{ggtitle}\NormalTok{(}\StringTok{"Price of 0.99 vs 1.00 Carat"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}\AttributeTok{plot.title =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{hjust =} \FloatTok{0.5}\NormalTok{)) }\SpecialCharTok{+}
+  \FunctionTok{facet\_wrap}\NormalTok{(}\SpecialCharTok{\textasciitilde{}}\NormalTok{ carat)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{skills_ps_3_files/figure-latex/unnamed-chunk-10-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(diamonds\_filter, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ cut, }\AttributeTok{y =}\NormalTok{ price)) }\SpecialCharTok{+} 
+  \FunctionTok{geom\_boxplot}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{stat\_boxplot}\NormalTok{(}
+    \AttributeTok{geom =} \StringTok{"errorbar"}\NormalTok{, }\CommentTok{\# Error bars}
+    \AttributeTok{width =} \FloatTok{0.25}
+\NormalTok{  ) }\SpecialCharTok{+}
+  \FunctionTok{ggtitle}\NormalTok{(}\StringTok{"Price of 0.99 vs 1.00 Carat"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}\AttributeTok{plot.title =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{hjust =} \FloatTok{0.5}\NormalTok{)) }\SpecialCharTok{+}
+  \FunctionTok{facet\_wrap}\NormalTok{(}\SpecialCharTok{\textasciitilde{}}\NormalTok{ carat)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{skills_ps_3_files/figure-latex/unnamed-chunk-11-1.pdf}
+
+\textbf{3. Compare and contrast + coord\_cartesian() vs + xlim() or +
+ylim() when zooming in on a histogram for carat. What happens if you
+leave binwidth at its default value and zoom in further and further?}
+
+\begin{itemize}
+\tightlist
+\item
+  Leaving binwidth at its default value and zoom in further using xlim()
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+ \FunctionTok{ggplot}\NormalTok{(diamonds) }\SpecialCharTok{+} 
+  \FunctionTok{geom\_histogram}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ carat)) }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"Carat"}\NormalTok{, }\AttributeTok{y =} \StringTok{"Count"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{ggtitle}\NormalTok{(}\StringTok{"Distribution of Carat using xlim"}\NormalTok{) }\SpecialCharTok{+} 
+  \FunctionTok{theme}\NormalTok{(}\AttributeTok{plot.title =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{hjust =} \FloatTok{0.5}\NormalTok{)) }\SpecialCharTok{+} 
+  \FunctionTok{xlim}\NormalTok{(}\DecValTok{1}\NormalTok{,}\FloatTok{1.5}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: Removed 40322 rows containing non-finite values (stat_bin).
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: Removed 2 rows containing missing values (geom_bar).
+\end{verbatim}
+
+\includegraphics{skills_ps_3_files/figure-latex/unnamed-chunk-12-1.pdf}
+
+\begin{itemize}
+\tightlist
+\item
+  Leaving binwidth at its default value and zoom in further using
+  coord\_cartesian
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(diamonds) }\SpecialCharTok{+} 
+  \FunctionTok{geom\_histogram}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ carat)) }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"Carat"}\NormalTok{, }\AttributeTok{y =} \StringTok{"Count"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{ggtitle}\NormalTok{(}\StringTok{"Distribution of Carat using coord\_cartesian"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}\AttributeTok{plot.title =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{hjust =} \FloatTok{0.5}\NormalTok{)) }\SpecialCharTok{+} 
+  \FunctionTok{coord\_cartesian}\NormalTok{( }\AttributeTok{xlim =} \FunctionTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{,}\FloatTok{1.5}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+\end{verbatim}
+
+\includegraphics{skills_ps_3_files/figure-latex/unnamed-chunk-13-1.pdf}
+
+\begin{itemize}
+\tightlist
+\item
+  Leaving binwidth at its default value and zoom in further and further
+  using coord\_cartesian
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(diamonds) }\SpecialCharTok{+} 
+  \FunctionTok{geom\_histogram}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ carat)) }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"Carat"}\NormalTok{, }\AttributeTok{y =} \StringTok{"Count"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{ggtitle}\NormalTok{(}\StringTok{"Distribution of Carat using coord\_cartesian"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}\AttributeTok{plot.title =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{hjust =} \FloatTok{0.5}\NormalTok{)) }\SpecialCharTok{+} 
+  \FunctionTok{coord\_cartesian}\NormalTok{( }\AttributeTok{xlim =} \FunctionTok{c}\NormalTok{(}\FloatTok{1.2}\NormalTok{,}\FloatTok{1.5}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+\end{verbatim}
+
+\includegraphics{skills_ps_3_files/figure-latex/unnamed-chunk-14-1.pdf}
+
+When using xlim, a message occurs stating that certain rows are being
+eliminated because they are not inside the axis limitations, i.e.~some
+values are being lost. Also, is just after filtering the xlim, that the
+geom is calculated.
+
+While no data is deleted when using coord\_cartesian, the bins are
+calculated using the original geom because we are zooming in the data
+after calculating the geoms. As a result, the two graphs appear to be
+distinct.
+
+\begin{itemize}
+\tightlist
+\item
+  Changing the default binwidth
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(}\AttributeTok{data =}\NormalTok{ diamonds, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ carat)) }\SpecialCharTok{+} 
+  \FunctionTok{geom\_histogram}\NormalTok{(}\AttributeTok{binwidth =} \FloatTok{0.01}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"Carat"}\NormalTok{, }\AttributeTok{y =} \StringTok{"Count"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{ggtitle}\NormalTok{(}\StringTok{"Distribution of Carat with a small binwidth "}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}\AttributeTok{plot.title =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{hjust =} \FloatTok{0.5}\NormalTok{)) }\SpecialCharTok{+} 
+  \FunctionTok{coord\_cartesian}\NormalTok{(}\AttributeTok{xlim =} \FunctionTok{c}\NormalTok{(}\FloatTok{1.0}\NormalTok{,}\FloatTok{1.5}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{skills_ps_3_files/figure-latex/unnamed-chunk-15-1.pdf}
+
+Also, when we leave binwidth at its default value, the data is
+aggregated by bins, leading data to display in the histogram in an
+accumulating manner, regardless of whether we use coord cartesian or
+xlim. We're altering the binwidth default in the graph above, and data
+becomes less and less aggregated as the binwidth becomes smaller.
+
+\pagebreak
+
+\hypertarget{eda-navigating-nas}{%
+\subsection{EDA: Navigating NAs}\label{eda-navigating-nas}}
+
+\textbf{1. What happens to missing values in a histogram? What happens
+to missing values in a bar chart? Why is there a difference? Create
+plots supporting your response.}
+
+\begin{itemize}
+\tightlist
+\item
+  We modify the diamonds dataframe to inserted NA's:
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{diamonds }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{y =} \FunctionTok{ifelse}\NormalTok{(y }\SpecialCharTok{\textless{}} \DecValTok{6} \SpecialCharTok{|}\NormalTok{ y }\SpecialCharTok{\textgreater{}} \DecValTok{20}\NormalTok{, }\ConstantTok{NA}\NormalTok{, y)) }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{ggplot}\NormalTok{() }\SpecialCharTok{+} 
+  \FunctionTok{geom\_histogram}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ y))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: Removed 31632 rows containing non-finite values (stat_bin).
+\end{verbatim}
+
+\includegraphics{skills_ps_3_files/figure-latex/unnamed-chunk-16-1.pdf}
+
+\begin{itemize}
+\tightlist
+\item
+  We modify the diamonds dataframe to have characters:
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{diamonds}\SpecialCharTok{$}\NormalTok{cut }\OtherTok{\textless{}{-}} \FunctionTok{as.character}\NormalTok{(diamonds}\SpecialCharTok{$}\NormalTok{cut)}
+
+\NormalTok{diamonds }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{cut =} \FunctionTok{ifelse}\NormalTok{(cut }\SpecialCharTok{==} \StringTok{"Ideal"}\NormalTok{, }\ConstantTok{NA}\NormalTok{, cut)) }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{ggplot}\NormalTok{() }\SpecialCharTok{+} 
+  \FunctionTok{geom\_bar}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ cut))}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{skills_ps_3_files/figure-latex/unnamed-chunk-17-1.pdf}
+
+In a histogram NA values are removed, since they cannot be represented
+(they do not have a value).\\
+On the other hand, in the bar chart, NA is a category that can be
+counted.
+
+\textbf{2. What does na.rm = TRUE do in mean() and sum()? }
+
+NA values cannot be included in calculations as they do not represent
+actual values, so if we try to average or sum a column that has NA
+values, the result will be NA. Therefore, the na.rm function acts as a
+logical parameter that removes (TRUE) or not (FALSE) the NA values, in
+other words, it excludes missing values when calculating descriptive
+statistics.
+
+\pagebreak
+
+\hypertarget{exploratory-data-analysis-covariation}{%
+\section{Exploratory Data Analysis:
+Covariation}\label{exploratory-data-analysis-covariation}}
+
+\hypertarget{diamonds-40-points}{%
+\subsection{Diamonds (40 points)}\label{diamonds-40-points}}
+
+\textbf{1.Looking at the table below it appears that fair is nearly the
+highest price cut of diamond and ideal the worst cut. But there is an
+omitted variable problem!}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{diamonds }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{group\_by}\NormalTok{(cut)  }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{summarise}\NormalTok{(}\AttributeTok{mean =} \FunctionTok{mean}\NormalTok{(price)) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{arrange}\NormalTok{(}\FunctionTok{desc}\NormalTok{(mean))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 5 x 2
+##   cut        mean
+##   <chr>     <dbl>
+## 1 Premium   4584.
+## 2 Fair      4359.
+## 3 Very Good 3982.
+## 4 Good      3929.
+## 5 Ideal     3458.
+\end{verbatim}
+
+\textbf{For parts a. and b., please include plots along with your
+response.}
+
+\textbf{a. What variable in the diamonds dataset is most important for
+predicting the price of a diamond?}
+
+\begin{itemize}
+\tightlist
+\item
+  We are going to perform a regression to give us an idea of the
+  correlation of variables:
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{summary}\NormalTok{(}\FunctionTok{lm}\NormalTok{(price }\SpecialCharTok{\textasciitilde{}}\NormalTok{ ., }\AttributeTok{data =}\NormalTok{ diamonds))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = price ~ ., data = diamonds)
+## 
+## Residuals:
+##      Min       1Q   Median       3Q      Max 
+## -21376.0   -592.4   -183.5    376.4  10694.2 
+## 
+## Coefficients:
+##               Estimate Std. Error  t value Pr(>|t|)    
+## (Intercept)   5173.444    405.136   12.770  < 2e-16 ***
+## carat        11256.978     48.628  231.494  < 2e-16 ***
+## cutGood        579.751     33.592   17.259  < 2e-16 ***
+## cutIdeal       832.912     33.407   24.932  < 2e-16 ***
+## cutPremium     762.144     32.228   23.649  < 2e-16 ***
+## cutVery Good   726.783     32.241   22.542  < 2e-16 ***
+## color.L      -1952.160     17.342 -112.570  < 2e-16 ***
+## color.Q       -672.054     15.777  -42.597  < 2e-16 ***
+## color.C       -165.283     14.725  -11.225  < 2e-16 ***
+## color^4         38.195     13.527    2.824  0.00475 ** 
+## color^5        -95.793     12.776   -7.498 6.59e-14 ***
+## color^6        -48.466     11.614   -4.173 3.01e-05 ***
+## clarity.L     4097.431     30.259  135.414  < 2e-16 ***
+## clarity.Q    -1925.004     28.227  -68.197  < 2e-16 ***
+## clarity.C      982.205     24.152   40.668  < 2e-16 ***
+## clarity^4     -364.918     19.285  -18.922  < 2e-16 ***
+## clarity^5      233.563     15.752   14.828  < 2e-16 ***
+## clarity^6        6.883     13.715    0.502  0.61575    
+## clarity^7       90.640     12.103    7.489 7.06e-14 ***
+## depth          -63.806      4.535  -14.071  < 2e-16 ***
+## table          -26.474      2.912   -9.092  < 2e-16 ***
+## x            -1008.261     32.898  -30.648  < 2e-16 ***
+## y                9.609     19.333    0.497  0.61918    
+## z              -50.119     33.486   -1.497  0.13448    
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 1130 on 53916 degrees of freedom
+## Multiple R-squared:  0.9198, Adjusted R-squared:  0.9198 
+## F-statistic: 2.688e+04 on 23 and 53916 DF,  p-value: < 2.2e-16
+\end{verbatim}
+
+From the regression, we can see that the variable ``carat'' is the one
+that explains the variation in price to a greater extent. This statement
+will be verified in the following plots that I will make, when I explore
+the relationship with other variables of the data.
+
+\begin{itemize}
+\tightlist
+\item
+  Price and Carat
+\end{itemize}
+
+From the two graphs below we can see a positive relationship between
+carat and price. As the carat is higher, the price is higher.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(diamonds) }\SpecialCharTok{+} 
+  \FunctionTok{geom\_point}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ carat, }\AttributeTok{y =}\NormalTok{ price, }\AttributeTok{color =}\NormalTok{ clarity)) }\SpecialCharTok{+}
+  \FunctionTok{ggtitle}\NormalTok{(}\StringTok{"Price and Carat"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}\AttributeTok{plot.title =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{hjust =} \FloatTok{0.5}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{skills_ps_3_files/figure-latex/unnamed-chunk-20-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(diamonds, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ carat, }\AttributeTok{y =}\NormalTok{ price)) }\SpecialCharTok{+} 
+  \FunctionTok{geom\_boxplot}\NormalTok{(}\AttributeTok{mapping =} \FunctionTok{aes}\NormalTok{(}\AttributeTok{group =} \FunctionTok{cut\_width}\NormalTok{(carat, }\FloatTok{0.2}\NormalTok{))) }\SpecialCharTok{+}
+  \FunctionTok{ggtitle}\NormalTok{(}\StringTok{"Price and Carat"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}\AttributeTok{plot.title =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{hjust =} \FloatTok{0.5}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{skills_ps_3_files/figure-latex/unnamed-chunk-21-1.pdf}
+
+\begin{itemize}
+\tightlist
+\item
+  Price and Clarity: From worst to best : I1, SI2, SI1, VS2, VS1, VVS2,
+  VVS1, IF
+\end{itemize}
+
+Regarding price and clarity, we see a negative relationship: as the
+clarity is better, the price is lower
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(diamonds, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ clarity, }\AttributeTok{y =}\NormalTok{ price)) }\SpecialCharTok{+} 
+  \FunctionTok{geom\_boxplot}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{stat\_boxplot}\NormalTok{(}
+    \AttributeTok{geom =} \StringTok{"errorbar"}\NormalTok{, }\CommentTok{\# Error bars}
+    \AttributeTok{width =} \FloatTok{0.25}
+\NormalTok{  ) }\SpecialCharTok{+}
+  \FunctionTok{ggtitle}\NormalTok{(}\StringTok{"Price and Clarity"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}\AttributeTok{plot.title =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{hjust =} \FloatTok{0.5}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{skills_ps_3_files/figure-latex/unnamed-chunk-22-1.pdf}
+
+\begin{itemize}
+\tightlist
+\item
+  Price and length (x variable)
+\end{itemize}
+
+With respect to the price and x (length) we appreciate a positive
+relationship. However, we can conclude that all the variables like
+length (x), width (y), depth (z), depth and table are contained in the
+variable ``carat'' which measures the weight of the diamond.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(diamonds) }\SpecialCharTok{+} 
+  \FunctionTok{geom\_point}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ x, }\AttributeTok{y =}\NormalTok{ price)) }\SpecialCharTok{+}
+  \FunctionTok{ggtitle}\NormalTok{(}\StringTok{"Price and Length"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}\AttributeTok{plot.title =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{hjust =} \FloatTok{0.5}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{skills_ps_3_files/figure-latex/unnamed-chunk-23-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(diamonds, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ x, }\AttributeTok{y =}\NormalTok{ price)) }\SpecialCharTok{+} 
+  \FunctionTok{geom\_boxplot}\NormalTok{(}\AttributeTok{mapping =} \FunctionTok{aes}\NormalTok{(}\AttributeTok{group =} \FunctionTok{cut\_width}\NormalTok{(x, }\FloatTok{0.2}\NormalTok{)))  }\SpecialCharTok{+}
+  \FunctionTok{ggtitle}\NormalTok{(}\StringTok{"Price and Length"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}\AttributeTok{plot.title =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{hjust =} \FloatTok{0.5}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{skills_ps_3_files/figure-latex/unnamed-chunk-24-1.pdf}
+
+\begin{itemize}
+\tightlist
+\item
+  Price and Color: from D (best) to J (worst)
+\end{itemize}
+
+As with the ``clarity'' variable, we can observe a negative relationship
+between price and color.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(diamonds, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ color, }\AttributeTok{y =}\NormalTok{ price)) }\SpecialCharTok{+} 
+  \FunctionTok{geom\_boxplot}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{stat\_boxplot}\NormalTok{(}
+    \AttributeTok{geom =} \StringTok{"errorbar"}\NormalTok{, }\CommentTok{\# Error bars}
+    \AttributeTok{width =} \FloatTok{0.25}
+\NormalTok{  )  }\SpecialCharTok{+}
+  \FunctionTok{ggtitle}\NormalTok{(}\StringTok{"Price and Color"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}\AttributeTok{plot.title =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{hjust =} \FloatTok{0.5}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{skills_ps_3_files/figure-latex/unnamed-chunk-25-1.pdf}
+
+Of all the variables analyzed, we can see that the ``carat'' variable
+correlates more clearly with the ``price'' variable, that is, as the
+carat varies, there is a greater variation in the price. This conclusion
+is also supported by the regression performed.
+
+\textbf{b. How is that variable correlated with cut?}
+
+Between ``carat'' and ``cut'' there is a negative relationship, except
+for the ``Premium'' category of the cut variable. Leaving aside the
+mentioned category, the better the cut, the lower the carat.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{diamonds}\SpecialCharTok{$}\NormalTok{cut }\OtherTok{\textless{}{-}} \FunctionTok{factor}\NormalTok{(diamonds}\SpecialCharTok{$}\NormalTok{cut, }
+                          \AttributeTok{levels =} \FunctionTok{c}\NormalTok{(}\StringTok{"Fair"}\NormalTok{, }\StringTok{"Good"}\NormalTok{, }\StringTok{"Very Good"}\NormalTok{, }\StringTok{"Premium"}\NormalTok{, }\StringTok{"Ideal"}\NormalTok{))}
+
+\FunctionTok{ggplot}\NormalTok{(diamonds, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ cut, }\AttributeTok{y =}\NormalTok{ carat)) }\SpecialCharTok{+} 
+  \FunctionTok{geom\_boxplot}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{stat\_boxplot}\NormalTok{(}
+    \AttributeTok{geom =} \StringTok{"errorbar"}\NormalTok{, }\CommentTok{\# Error bars}
+    \AttributeTok{width =} \FloatTok{0.25}
+\NormalTok{  ) }\SpecialCharTok{+}
+  \FunctionTok{ggtitle}\NormalTok{(}\StringTok{"Carat and Cut"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}\AttributeTok{plot.title =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{hjust =} \FloatTok{0.5}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{skills_ps_3_files/figure-latex/unnamed-chunk-26-1.pdf}
+
+\textbf{c.~Explain why the table above is misleading.}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{diamonds }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{group\_by}\NormalTok{(cut) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{summarise}\NormalTok{(}\AttributeTok{mean\_price =} \FunctionTok{mean}\NormalTok{(price), }\AttributeTok{mean\_carat =} \FunctionTok{mean}\NormalTok{(carat)) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{arrange}\NormalTok{(}\FunctionTok{desc}\NormalTok{(mean\_carat))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 5 x 3
+##   cut       mean_price mean_carat
+##   <fct>          <dbl>      <dbl>
+## 1 Fair           4359.      1.05 
+## 2 Premium        4584.      0.892
+## 3 Good           3929.      0.849
+## 4 Very Good      3982.      0.806
+## 5 Ideal          3458.      0.703
+\end{verbatim}
+
+The table is deceptive since it does not include all of the attributes
+that must be considered when determining the diamond's price. We've
+previously demonstrated that the carat accounts for a considerable
+portion of the range in diamond pricing. For example, the ``ideal''
+diamond (the best cut) has a smaller average carat, which explains why
+it costs less (there are probably only small diamonds with ideal cut).
+In addition, the ``Premium'' cut has the greatest price as well as the
+largest average carat.
+
+On the other hand, we discovered that other factors, such as color and
+clarity, are associated to pricing.
+
+\textbf{2. After recreating the two categorical variable dataframe in
+7.5.2 from the textbook, adjust it to more clearly show the distribution
+of cut within colour.}
+
+\begin{itemize}
+\tightlist
+\item
+  Graph from the text book:
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{diamonds }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{count}\NormalTok{(color, cut) }\SpecialCharTok{\%\textgreater{}\%}  
+  \FunctionTok{ggplot}\NormalTok{(}\AttributeTok{mapping =} \FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ color, }\AttributeTok{y =}\NormalTok{ cut)) }\SpecialCharTok{+}
+    \FunctionTok{geom\_tile}\NormalTok{(}\AttributeTok{mapping =} \FunctionTok{aes}\NormalTok{(}\AttributeTok{fill =}\NormalTok{ n))}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{skills_ps_3_files/figure-latex/unnamed-chunk-28-1.pdf}
+
+\begin{itemize}
+\tightlist
+\item
+  Adjusting to show more clearly the distribution of cut within color:
+\end{itemize}
+
+The number of repetitions of cuts in colors does not clearly show the
+distribution. Therefore, we are going to use the ratio of cuts for each
+color (total number of cuts per color divided by the total number of
+cuts in that color).
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{diamonds }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{count}\NormalTok{(color, cut) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{group\_by}\NormalTok{(color) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{prop\_porcentage =}\NormalTok{ (n }\SpecialCharTok{/} \FunctionTok{sum}\NormalTok{(n))}\SpecialCharTok{*}\DecValTok{100}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%} \CommentTok{\#we are multiplying by 100 to have porcentage}
+  \FunctionTok{ggplot}\NormalTok{(}\AttributeTok{mapping =} \FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ color, }\AttributeTok{y =}\NormalTok{ cut)) }\SpecialCharTok{+}
+  \FunctionTok{geom\_tile}\NormalTok{(}\AttributeTok{mapping =} \FunctionTok{aes}\NormalTok{(}\AttributeTok{fill =}\NormalTok{ prop\_porcentage)) }\SpecialCharTok{+}
+  \FunctionTok{ggtitle}\NormalTok{(}\StringTok{"Distribution of cut within color"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}\AttributeTok{plot.title =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{hjust =} \FloatTok{0.5}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{skills_ps_3_files/figure-latex/unnamed-chunk-29-1.pdf}
+
+\textbf{a. Which cut is most common in every color category?}
+
+The ``Ideal'' color is more common in each category of the color
+variable. As we can see in the graph, the ``Ideal'' cut represents
+approximately 40\% of the total cuts for all colors.
+
+\textbf{b. Repeat the exercise again to show distribution of colour
+within cut.}
+
+Now, let's group by cut:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{diamonds }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{count}\NormalTok{(color, cut) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{group\_by}\NormalTok{(cut) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{prop\_porcentage =}\NormalTok{ n }\SpecialCharTok{/} \FunctionTok{sum}\NormalTok{(n)}\SpecialCharTok{*}\DecValTok{100}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{ggplot}\NormalTok{(}\AttributeTok{mapping =} \FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ color, }\AttributeTok{y =}\NormalTok{ cut)) }\SpecialCharTok{+}
+  \FunctionTok{geom\_tile}\NormalTok{(}\AttributeTok{mapping =} \FunctionTok{aes}\NormalTok{(}\AttributeTok{fill =}\NormalTok{ prop\_porcentage)) }\SpecialCharTok{+}
+  \FunctionTok{ggtitle}\NormalTok{(}\StringTok{"Distribution of colour within cut"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}\AttributeTok{plot.title =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{hjust =} \FloatTok{0.5}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{skills_ps_3_files/figure-latex/unnamed-chunk-30-1.pdf}
+
+From the graph, we can see that color G is the one that is repeated the
+most within all the cut categories (it has the clearest grids).
+
+\textbf{c.~Using the dataframe you just produced as input, reproduce the
+following graph.}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#Using the data frame from last plot}
+\NormalTok{diamond2 }\OtherTok{\textless{}{-}}\NormalTok{ diamonds }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{count}\NormalTok{(color, cut) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{group\_by}\NormalTok{(cut) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{mutate}\NormalTok{(}\AttributeTok{prop =}\NormalTok{ n }\SpecialCharTok{/} \FunctionTok{sum}\NormalTok{(n))}
+
+\FunctionTok{ggplot}\NormalTok{(diamond2, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ color, }\AttributeTok{y =}\NormalTok{ prop)) }\SpecialCharTok{+}
+  \FunctionTok{geom\_bar}\NormalTok{(}\AttributeTok{stat =} \StringTok{"identity"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{facet\_wrap}\NormalTok{(}\SpecialCharTok{\textasciitilde{}}\NormalTok{cut)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{skills_ps_3_files/figure-latex/unnamed-chunk-31-1.pdf}
+
+\textbf{3. Instead of summarising the conditional distribution of price
+by carat size with a boxplot (see 7.5.3), you could use a frequency
+polygon, where you map binned carat data to the color aesthetic.}
+
+\begin{itemize}
+\tightlist
+\item
+  Graph from the book:
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(}\AttributeTok{data =}\NormalTok{ diamonds, }\AttributeTok{mapping =} \FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ carat, }\AttributeTok{y =}\NormalTok{ price)) }\SpecialCharTok{+} 
+  \FunctionTok{geom\_boxplot}\NormalTok{(}\AttributeTok{mapping =} \FunctionTok{aes}\NormalTok{(}\AttributeTok{group =} \FunctionTok{cut\_width}\NormalTok{(carat, }\FloatTok{0.1}\NormalTok{)))}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{skills_ps_3_files/figure-latex/unnamed-chunk-32-1.pdf}
+
+\textbf{a. Make a frequency polygon using cut\_width() and another using
+cut\_number(). Adjust the parameters until you think both graphs are
+most useful.}
+
+By using cut\_number we choose the number of bins that the graph should
+fetch. In this sense, in this case, five bins have been chosen since it
+is better perceived by sight, and contains the necessary information.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(diamonds, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ price, }\AttributeTok{color =} \FunctionTok{cut\_number}\NormalTok{(carat, }\DecValTok{5}\NormalTok{))) }\SpecialCharTok{+} 
+    \FunctionTok{geom\_freqpoly}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+\end{verbatim}
+
+\includegraphics{skills_ps_3_files/figure-latex/unnamed-chunk-33-1.pdf}
+
+On the other hand, when we use cut\_width, we determine the width and R
+performs the calculation of how many containers correspond. By choosing
+a larger width number, very little information is visible (only one
+frequency is visible); even though the width of 0.5 creates multiple
+clusters, only three are correctly perceived on the graph, so it is
+considered to present valuable information.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(diamonds, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ price, }\AttributeTok{color =} \FunctionTok{cut\_width}\NormalTok{(carat, }\FloatTok{0.5}\NormalTok{, }\AttributeTok{boundary =} \DecValTok{0}\NormalTok{))) }\SpecialCharTok{+} 
+    \FunctionTok{geom\_freqpoly}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+\end{verbatim}
+
+\includegraphics{skills_ps_3_files/figure-latex/unnamed-chunk-34-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# we put boundary = 0 to ensure the first bin starts with 0}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{b. For this application (carat and price), what are the pros and
+cons of cut\_width() relative to cut\_number()?}
+
+Since the data is skewed to the right in this application, the downside
+of cut\_width() is that it's hard to set a width that can display enough
+information in the rightmost bins. On the other hand, the advantage is
+that the intervals of each of the bits is the same, and can be quickly
+identified, unlike the cut\_number function.
+
+\textbf{4. Visualize the distribution of carat, partitioned by price.
+The graph should have a clear story accentuated by a descriptive title.}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(diamonds, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =} \FunctionTok{cut\_number}\NormalTok{(price}\SpecialCharTok{/}\DecValTok{100}\NormalTok{, }\DecValTok{10}\NormalTok{), }\AttributeTok{y =}\NormalTok{ carat)) }\SpecialCharTok{+} 
+  \FunctionTok{geom\_boxplot}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{stat\_boxplot}\NormalTok{(}
+    \AttributeTok{geom =} \StringTok{"errorbar"}\NormalTok{, }\CommentTok{\# Error bars}
+    \AttributeTok{width =} \FloatTok{0.25}
+\NormalTok{  )  }\SpecialCharTok{+}
+  \FunctionTok{ggtitle}\NormalTok{(}\StringTok{"Distribution of carat partitioned by price"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}\AttributeTok{plot.title =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{hjust =} \FloatTok{0.5}\NormalTok{)) }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{y =} \StringTok{"Carat"}\NormalTok{, }\AttributeTok{x =} \StringTok{"Price in hundreds of dollars"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{coord\_flip}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{skills_ps_3_files/figure-latex/unnamed-chunk-35-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(diamonds, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ carat, }\AttributeTok{color =} \FunctionTok{cut\_number}\NormalTok{(price }\SpecialCharTok{/} \DecValTok{100}\NormalTok{, }\DecValTok{5}\NormalTok{))) }\SpecialCharTok{+}
+  \FunctionTok{geom\_freqpoly}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{ggtitle}\NormalTok{(}\StringTok{"Distribution of carat partitioned by price"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}\AttributeTok{plot.title =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{hjust =} \FloatTok{0.5}\NormalTok{)) }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{y =} \StringTok{"Count"}\NormalTok{, }\AttributeTok{x =} \StringTok{"Carat"}\NormalTok{, }\AttributeTok{color =} \StringTok{"Price in hundreds of dollars"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+\end{verbatim}
+
+\includegraphics{skills_ps_3_files/figure-latex/unnamed-chunk-36-1.pdf}
+
+\textbf{5. How does the price distribution of very large diamonds (as
+measured by carat) compare to small diamonds? Is it as you expect, or
+does it surprise you? Why?}
+
+The variance in the distribution of bigger diamonds is significantly
+greater than the variation in the distribution of smaller diamonds, as
+can be seen in both graphs. In the first graph, for example, we can see
+that the box plot grows larger as the carat increases, and there are
+also more outliers. We can observe from graph 2 that smaller diamonds
+have a narrower bin. I'm not surprised, because I would anticipate
+people to seek out bigger diamonds. As a result, it's more likely that
+there will be a bigger supply (number) of big diamonds, and that their
+qualities will be more diverse in relation to them (affecting price).
+
+We've seen in earlier questions that pricing is influenced by factors
+like clarity, cut, and color. As a result, having a larger number of
+huge diamonds increases the likelihood of a wider range of
+characteristics and, ultimately, a higher variation in price.
+
+\textbf{6. So far we've focused on visualizing covariation of two
+variables. We can add a third dimension in several ways. For example, we
+could map to a third aesthetic or add facets. Combine two of the
+techniques you've learned in this class to visualise the combined
+distribution of cut, carat, and price.}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(diamonds, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ carat, }\AttributeTok{color =} \FunctionTok{cut\_number}\NormalTok{(price }\SpecialCharTok{/} \DecValTok{100}\NormalTok{, }\DecValTok{5}\NormalTok{))) }\SpecialCharTok{+}
+  \FunctionTok{geom\_freqpoly}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{ggtitle}\NormalTok{(}\StringTok{"Distribution of carat by cut partitioned by price"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}\AttributeTok{plot.title =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{hjust =} \FloatTok{0.5}\NormalTok{)) }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{y =} \StringTok{"Count"}\NormalTok{, }\AttributeTok{x =} \StringTok{"Carat"}\NormalTok{, }\AttributeTok{color =} \StringTok{"Price in hundreds of dollars"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{facet\_wrap}\NormalTok{(}\SpecialCharTok{\textasciitilde{}}\NormalTok{ cut)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+\end{verbatim}
+
+\includegraphics{skills_ps_3_files/figure-latex/unnamed-chunk-37-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(diamonds, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =} \FunctionTok{cut\_number}\NormalTok{(price}\SpecialCharTok{/}\DecValTok{100}\NormalTok{, }\DecValTok{5}\NormalTok{), }\AttributeTok{y =}\NormalTok{ carat)) }\SpecialCharTok{+} 
+  \FunctionTok{geom\_boxplot}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{stat\_boxplot}\NormalTok{(}
+    \AttributeTok{geom =} \StringTok{"errorbar"}\NormalTok{, }\CommentTok{\# Error bars}
+    \AttributeTok{width =} \FloatTok{0.25}
+\NormalTok{  )  }\SpecialCharTok{+}
+  \FunctionTok{ggtitle}\NormalTok{(}\StringTok{"Distribution of carat by cut partitioned by price"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}\AttributeTok{plot.title =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{hjust =} \FloatTok{0.5}\NormalTok{)) }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{y =} \StringTok{"Carat"}\NormalTok{, }\AttributeTok{x =} \StringTok{"Price in hundreds of dollars"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{coord\_flip}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{facet\_wrap}\NormalTok{(}\SpecialCharTok{\textasciitilde{}}\NormalTok{ cut)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{skills_ps_3_files/figure-latex/unnamed-chunk-38-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(diamonds) }\SpecialCharTok{+} 
+  \FunctionTok{geom\_hex}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ carat, }\AttributeTok{y =}\NormalTok{ price)) }\SpecialCharTok{+}
+  \FunctionTok{facet\_wrap}\NormalTok{(}\SpecialCharTok{\textasciitilde{}}\NormalTok{ cut) }\SpecialCharTok{+}
+  \FunctionTok{ggtitle}\NormalTok{(}\StringTok{"Distribution of carat by cut partitioned by price"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}\AttributeTok{plot.title =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{hjust =} \FloatTok{0.5}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{skills_ps_3_files/figure-latex/unnamed-chunk-39-1.pdf}
+
+\textbf{7. Two dimensional plots reveal outliers that are not visible in
+one dimensional plots. For example, some points in the plot below have
+an unusual combination of x and y values, which makes the points
+outliers even though their x and y values appear normal when examined
+separately. Consider the two plots below }
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(}\AttributeTok{data =}\NormalTok{ diamonds) }\SpecialCharTok{+}
+\FunctionTok{geom\_point}\NormalTok{(}\AttributeTok{mapping =} \FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ x, }\AttributeTok{y =}\NormalTok{ y)) }\SpecialCharTok{+}
+\FunctionTok{coord\_cartesian}\NormalTok{(}\AttributeTok{xlim =} \FunctionTok{c}\NormalTok{(}\DecValTok{4}\NormalTok{, }\DecValTok{11}\NormalTok{), }\AttributeTok{ylim =} \FunctionTok{c}\NormalTok{(}\DecValTok{4}\NormalTok{, }\DecValTok{11}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{skills_ps_3_files/figure-latex/unnamed-chunk-40-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(}\AttributeTok{data =}\NormalTok{ diamonds) }\SpecialCharTok{+}
+\FunctionTok{geom\_bin2d}\NormalTok{(}\AttributeTok{mapping =} \FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ x, }\AttributeTok{y =}\NormalTok{ y)) }\SpecialCharTok{+}
+\FunctionTok{coord\_cartesian}\NormalTok{(}\AttributeTok{xlim =} \FunctionTok{c}\NormalTok{(}\DecValTok{4}\NormalTok{, }\DecValTok{11}\NormalTok{), }\AttributeTok{ylim =} \FunctionTok{c}\NormalTok{(}\DecValTok{4}\NormalTok{, }\DecValTok{11}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{skills_ps_3_files/figure-latex/unnamed-chunk-41-1.pdf}
+
+\textbf{Which geom is better for identifying outliers? Why?}
+
+The geom\_point plot.
+
+The first plot, geom\_point, more directly reveals the outliers of the x
+and y variables. The same cannot be said of the binned plot, because it
+has categorized data in bins, which does not allow the individual data
+to be identified at a glance. In this sense, the last graph does not
+allow to clearly establish an association between the variables and
+visualize the outliers.
+
+\pagebreak
+
+\hypertarget{flights-10-points}{%
+\section{Flights (10 points)}\label{flights-10-points}}
+
+\textbf{1. In class we saw three ways other than geom\_point() to relate
+two continuous variables. Use these three ways to compare scheduled
+departure time and departure delay. (hint: you will need to construct
+groups for geom\_boxplot() to get it to work.) What lessons stand out
+from each geom choice? Are any geoms dominated, meaning that you would
+never want to use them?}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(nycflights13)}
+\FunctionTok{view}\NormalTok{(flights)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{itemize}
+\tightlist
+\item
+  Using geom\_boxplot
+\end{itemize}
+
+From the boxplot, we can conclude that as a flight is scheduled later,
+there is a higher average departure delay. Likewise, it can be seen that
+there is less variation in the variable ``dep\_delay'' as the flight is
+scheduled for later.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{flights }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{filter}\NormalTok{(dep\_delay }\SpecialCharTok{\textgreater{}} \DecValTok{0}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%} \CommentTok{\# Using only delay flights (no flights that departed early)}
+  \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =} \FunctionTok{cut\_number}\NormalTok{(dep\_delay }\SpecialCharTok{/} \DecValTok{10}\NormalTok{, }\DecValTok{10}\NormalTok{), }\AttributeTok{y =}\NormalTok{ sched\_dep\_time)) }\SpecialCharTok{+}
+  \FunctionTok{geom\_boxplot}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{stat\_boxplot}\NormalTok{(}
+    \AttributeTok{geom =} \StringTok{"errorbar"}\NormalTok{, }\CommentTok{\# Error bars}
+    \AttributeTok{width =} \FloatTok{0.25}
+\NormalTok{  ) }\SpecialCharTok{+}
+  \FunctionTok{ggtitle}\NormalTok{(}\StringTok{"Comparing scheduled departure time and departure delay"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}\AttributeTok{plot.title =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{hjust =} \FloatTok{0.5}\NormalTok{)) }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{y =} \StringTok{""}\NormalTok{, }\AttributeTok{x =} \StringTok{"Departure delay divided by 10"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{skills_ps_3_files/figure-latex/unnamed-chunk-43-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(binsreg)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{itemize}
+\tightlist
+\item
+  Using binscatter
+\end{itemize}
+
+This graph shows us in a more direct way the relationship between the
+scheduled time of the flight and its delay. In this way, we can
+establish that both variables have a positive correlation, the latest
+the flight time is, the greater the probability of delay.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Using only delay flights (no flights that departed early)  }
+\NormalTok{flight1 }\OtherTok{\textless{}{-}}\NormalTok{ flights }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{filter}\NormalTok{(dep\_delay }\SpecialCharTok{\textgreater{}} \DecValTok{0}\NormalTok{)}
+
+\FunctionTok{binsreg}\NormalTok{(flight1}\SpecialCharTok{$}\NormalTok{sched\_dep\_time, flight1}\SpecialCharTok{$}\NormalTok{dep\_delay, }\AttributeTok{nbins =} \DecValTok{20}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{skills_ps_3_files/figure-latex/unnamed-chunk-45-1.pdf}
+
+\begin{verbatim}
+## Call: binsreg
+## 
+## Binscatter Plot
+## Bin selection method (binsmethod)  =  User-specified
+## Placement (binspos)                =  Quantile-spaced
+## Derivative (deriv)                 =  0
+## 
+## Group (by)                         =  Full Sample
+## Sample size (n)                    =  128432
+## # of distinct values (Ndist)       =  495
+## # of clusters (Nclust)             =  NA
+## dots, degree (p)                   =  0
+## dots, smooth (s)                   =  0
+## # of bins (nbins)                  =  20
+\end{verbatim}
+
+\begin{itemize}
+\tightlist
+\item
+  Using geom\_hex
+\end{itemize}
+
+We could say that this third plot is the one that is dominated by the
+two previous variables. This graph does not show the relationship of
+variables very clearly, since the data is divided into bins, i.e.~that
+do not allow the data to be viewed well.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(flights) }\SpecialCharTok{+} 
+  \FunctionTok{geom\_hex}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ dep\_delay, }\AttributeTok{y =}\NormalTok{ sched\_dep\_time))  }\SpecialCharTok{+}
+  \FunctionTok{ggtitle}\NormalTok{(}\StringTok{"Comparing scheduled departure time and departure delay"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme}\NormalTok{(}\AttributeTok{plot.title =} \FunctionTok{element\_text}\NormalTok{(}\AttributeTok{hjust =} \FloatTok{0.5}\NormalTok{))  }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{y =} \StringTok{"Schedule departed time"}\NormalTok{, }\AttributeTok{x =} \StringTok{"Departure delay divided by 10"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{skills_ps_3_files/figure-latex/unnamed-chunk-46-1.pdf}
+
+\pagebreak
+
+\hypertarget{r4ds-chapter-10-and-11-15-points}{%
+\section{R4DS Chapter 10 and 11 (15
+points)}\label{r4ds-chapter-10-and-11-15-points}}
+
+\textbf{1. Consider the code chunk below with three operations applied
+to the data.frame called d\_f.~Create a tibble with the same content and
+apply these same three operations to the tibble. How do the results
+differ? Why might the default data frame behaviours cause you
+frustration?}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{d\_f }\OtherTok{\textless{}{-}} \FunctionTok{data.frame}\NormalTok{(}\AttributeTok{abc =} \DecValTok{1}\NormalTok{, }\AttributeTok{xyz =} \StringTok{"a"}\NormalTok{)}
+\NormalTok{d\_f}\SpecialCharTok{$}\NormalTok{x}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "a"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{d\_f[, }\StringTok{"xyz"}\NormalTok{]}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "a"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{d\_f[, }\FunctionTok{c}\NormalTok{(}\StringTok{"abc"}\NormalTok{, }\StringTok{"xyz"}\NormalTok{)]}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##   abc xyz
+## 1   1   a
+\end{verbatim}
+
+-Create a tibble
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{tbl }\OtherTok{\textless{}{-}} \FunctionTok{as\_tibble}\NormalTok{(d\_f)}
+\NormalTok{tbl}\SpecialCharTok{$}\NormalTok{x}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: Unknown or uninitialised column: `x`.
+\end{verbatim}
+
+\begin{verbatim}
+## NULL
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{tbl[, }\StringTok{"xyz"}\NormalTok{]}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 1 x 1
+##   xyz  
+##   <chr>
+## 1 a
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{tbl[, }\FunctionTok{c}\NormalTok{(}\StringTok{"abc"}\NormalTok{, }\StringTok{"xyz"}\NormalTok{)]}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 1 x 2
+##     abc xyz  
+##   <dbl> <chr>
+## 1     1 a
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# This will be the same result than in the dataframe}
+\end{Highlighting}
+\end{Shaded}
+
+The results differ in both the first and second application of the code.
+When using the
+d\_f\(x function on the dataframe, the result is "a". However, with the tibble we no longer have the same answer. This difference occurs, since with the dataframe the d_f\)x
+function looks for any column that begins with the letter x. The
+frustrating thing is that this can cause complications in the treatment
+of the data. By chance, we can take a column that does not correspond to
+the one we want to work with.
+
+To have the same result with the tibble, we would have to use tdf\$xyz
+for the first application of the code.
+
+Regarding the second application, the dataframe shows the result as a
+vector and not as a table. Instead, tibble returns the output as a table
+
+\textbf{2. Write code to import a file ``file.xxx'' where fields are
+separated with ``\textbar{}''?}
+
+\emph{we were told not to do this question}
+
+\textbf{3. Identify what is wrong with each of the following inline CSV
+files.}
+
+\begin{itemize}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \tightlist
+  \item
+    read\_csv(``a,b ~n 1,2,3 ~n 4,5,6'')
+  \end{enumerate}
+\end{itemize}
+
+What is wrong with this table is that only two columns ``a and b'' have
+been created but we have data as if there were three columns. Therefore,
+the value of the third column is being merged with the value of the
+second column.
+
+\begin{itemize}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \setcounter{enumi}{1}
+  \tightlist
+  \item
+    read\_csv(``a,b,c ~n 1,2 ~n 1,2,3,4'')
+  \end{enumerate}
+\end{itemize}
+
+Similar to the previous case, the error now occurs because the third row
+had four data, but only three columns ``a,b and c'' had been created.
+Likewise, the second row only had two data and was assigned the value of
+NA.
+
+\begin{itemize}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \setcounter{enumi}{2}
+  \tightlist
+  \item
+    read\_csv(``a,b~n ~''1")
+  \end{enumerate}
+\end{itemize}
+
+We get data error that a value ("``) has been quoted, as there is an
+extra''". The problem is solved if you remove the quotes from the number
+1.
+
+\begin{itemize}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \setcounter{enumi}{3}
+  \tightlist
+  \item
+    read\_csv(``a,b ~n 1,2 ~na,b'')
+  \end{enumerate}
+\end{itemize}
+
+Since the second row is made up of ``a'' and ``b'' as strings, the
+numbers in the first row will also be considered as characters. Both
+columns are clasified as .
+
+\begin{itemize}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \setcounter{enumi}{4}
+  \tightlist
+  \item
+    read\_csv(``a;b\n1;3'')
+  \end{enumerate}
+\end{itemize}
+
+The function is treating the information poured as a single column. It
+does not recognize the semicolon (;), just commas. In this application,
+if we remove the semicolon and replace it with the comma, the tables
+will be fixed.
+
+\textbf{4. Review the textbook to understand locale(). What do the
+date\_format and time\_format options to locale() do? Figure out how to
+handle dates from Latin American countries. Provide a code line of code
+as an example of your understanding.}
+
+Date\_format and time\_format set a specific format to use for the date
+or time respectively. They help encapsulate the common characteristics
+by locality, in this case specifically referring to time and dates. For
+example, we would put the following:
+
+\begin{itemize}
+\tightlist
+\item
+  Using date\_format:
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{parse\_date}\NormalTok{(}\StringTok{"23/05/22"}\NormalTok{, }\AttributeTok{locale =} \FunctionTok{locale}\NormalTok{(}\AttributeTok{date\_format =} \StringTok{"\%d/\%m/\%y"}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "2022-05-23"
+\end{verbatim}
+
+\begin{itemize}
+\tightlist
+\item
+  Using time\_format:
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{parse\_time}\NormalTok{(}\StringTok{"5:35 PM"}\NormalTok{, }\AttributeTok{locale =} \FunctionTok{locale}\NormalTok{(}\AttributeTok{time\_format =} \StringTok{"\%H:\%M \%p"}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 17:35:00
+\end{verbatim}
+
+\begin{itemize}
+\tightlist
+\item
+  Handling dates from Latin American countries
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{date\_names\_langs}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##   [1] "af"  "agq" "ak"  "am"  "ar"  "as"  "asa" "az"  "bas" "be"  "bem" "bez"
+##  [13] "bg"  "bm"  "bn"  "bo"  "br"  "brx" "bs"  "ca"  "cgg" "chr" "cs"  "cy" 
+##  [25] "da"  "dav" "de"  "dje" "dsb" "dua" "dyo" "dz"  "ebu" "ee"  "el"  "en" 
+##  [37] "eo"  "es"  "et"  "eu"  "ewo" "fa"  "ff"  "fi"  "fil" "fo"  "fr"  "fur"
+##  [49] "fy"  "ga"  "gd"  "gl"  "gsw" "gu"  "guz" "gv"  "ha"  "haw" "he"  "hi" 
+##  [61] "hr"  "hsb" "hu"  "hy"  "id"  "ig"  "ii"  "is"  "it"  "ja"  "jgo" "jmc"
+##  [73] "ka"  "kab" "kam" "kde" "kea" "khq" "ki"  "kk"  "kkj" "kl"  "kln" "km" 
+##  [85] "kn"  "ko"  "kok" "ks"  "ksb" "ksf" "ksh" "kw"  "ky"  "lag" "lb"  "lg" 
+##  [97] "lkt" "ln"  "lo"  "lt"  "lu"  "luo" "luy" "lv"  "mas" "mer" "mfe" "mg" 
+## [109] "mgh" "mgo" "mk"  "ml"  "mn"  "mr"  "ms"  "mt"  "mua" "my"  "naq" "nb" 
+## [121] "nd"  "ne"  "nl"  "nmg" "nn"  "nnh" "nus" "nyn" "om"  "or"  "os"  "pa" 
+## [133] "pl"  "ps"  "pt"  "qu"  "rm"  "rn"  "ro"  "rof" "ru"  "rw"  "rwk" "sah"
+## [145] "saq" "sbp" "se"  "seh" "ses" "sg"  "shi" "si"  "sk"  "sl"  "smn" "sn" 
+## [157] "so"  "sq"  "sr"  "sv"  "sw"  "ta"  "te"  "teo" "th"  "ti"  "to"  "tr" 
+## [169] "twq" "tzm" "ug"  "uk"  "ur"  "uz"  "vai" "vi"  "vun" "wae" "xog" "yav"
+## [181] "yi"  "yo"  "zgh" "zh"  "zu"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{parse\_date}\NormalTok{(}\StringTok{"5 Marzo 2022"}\NormalTok{, }\StringTok{"\%d \%B \%Y"}\NormalTok{, }\AttributeTok{locale =} \FunctionTok{locale}\NormalTok{(}\StringTok{"es"}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "2022-03-05"
+\end{verbatim}
+
+\textbf{5. Generate the correct format string to parse each of the
+following dates and times:}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{d1 }\OtherTok{\textless{}{-}} \StringTok{"January 1, 2010"}
+\NormalTok{d2 }\OtherTok{\textless{}{-}} \StringTok{"2015{-}Mar{-}07"}
+\NormalTok{d3 }\OtherTok{\textless{}{-}} \StringTok{"06{-}Jun{-}2016"}
+\NormalTok{d4 }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}\StringTok{"August 19 (2015)"}\NormalTok{, }\StringTok{"July 1 (2015)"}\NormalTok{)}
+\NormalTok{d5 }\OtherTok{\textless{}{-}} \StringTok{"12/30/14"} \CommentTok{\# Dec 30, 2014}
+\NormalTok{t1 }\OtherTok{\textless{}{-}} \StringTok{"1805"} \CommentTok{\# 6:05 pm}
+\NormalTok{t2 }\OtherTok{\textless{}{-}} \StringTok{"11:25:10.12 PM"}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{itemize}
+\tightlist
+\item
+  Correct format d1:
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{parse\_date}\NormalTok{(d1, }\StringTok{"\%B \%d, \%Y"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "2010-01-01"
+\end{verbatim}
+
+\begin{itemize}
+\tightlist
+\item
+  Correct format d2:
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{parse\_date}\NormalTok{(d2, }\StringTok{"\%Y{-}\%b{-}\%d"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "2015-03-07"
+\end{verbatim}
+
+\begin{itemize}
+\tightlist
+\item
+  Correct format d3:
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{parse\_date}\NormalTok{(d3, }\StringTok{"\%d{-}\%b{-}\%Y"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "2016-06-06"
+\end{verbatim}
+
+\begin{itemize}
+\tightlist
+\item
+  Correct format d4:
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{parse\_date}\NormalTok{(d4, }\StringTok{"\%B \%d (\%Y)"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "2015-08-19" "2015-07-01"
+\end{verbatim}
+
+\begin{itemize}
+\tightlist
+\item
+  Correct format d5:
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{parse\_date}\NormalTok{(d5, }\StringTok{"\%m/\%d/\%y"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "2014-12-30"
+\end{verbatim}
+
+\begin{itemize}
+\tightlist
+\item
+  Correct format t1:
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{parse\_time}\NormalTok{(t1, }\StringTok{"\%H\%M"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 18:05:00
+\end{verbatim}
+
+\begin{itemize}
+\tightlist
+\item
+  Correct format t2:
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{parse\_time}\NormalTok{(t2, }\StringTok{"\%I:\%M:\%OS \%p"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 23:25:10.12
+\end{verbatim}
+
+\textbf{6. Run fwf\_empty() using readr\_example(``massey-rating.txt'').
+Describe the output.}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{readr\_example}\NormalTok{(}\StringTok{"massey{-}rating.txt"}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{fwf\_empty}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## $begin
+##  [1]  0  4  8 12 17 22 26 30 34 38 42 47 63
+## 
+## $end
+##  [1]  3  7 11 15 19 25 29 33 37 41 46 59 NA
+## 
+## $col_names
+##  [1] "X1"  "X2"  "X3"  "X4"  "X5"  "X6"  "X7"  "X8"  "X9"  "X10" "X11" "X12"
+## [13] "X13"
+\end{verbatim}
+
+As an alternative to using parse, the fwf\_empty function makes guesses
+based on the positions of empty columns. In that sense, we have an
+output that shows 13 column names (X1 to X13) and two additional
+columns: begin and end. The data of the last mentioned variables are
+ascending. We can also see that there is a missing value, which is set
+to ``NA''
+
+\pagebreak
+
+\end{document}
